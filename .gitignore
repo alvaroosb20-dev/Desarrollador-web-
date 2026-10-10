@@ -1,9 +1,9 @@
-node_modules
-.next
-out
-.env
-.env.local
-.env*.local
-*.tsbuildinfo
-.vercel
 .DS_Store
+node_modules
+supabase/.temp
+supabase/.branches
+supabase/functions/.env
+.env
+.env.*
+!supabase/functions/.env.example
+__pycache__

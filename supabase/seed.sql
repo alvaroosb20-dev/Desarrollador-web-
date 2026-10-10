@@ -40,14 +40,14 @@ on conflict (id) do nothing;
 insert into public.packages (slug, name, price_cents, audience, description, features, page_limit, revision_rounds, badge, highlighted, cta_label, sort)
 values
 ('web-basica', 'Web Básica', 24999,
- 'Para autónomos, pequeños negocios y personas que necesitan una presencia profesional en Internet.',
+ 'Para autónomos y pequeños negocios.',
  'Una web profesional y sencilla para que te encuentren y te contacten.',
- '["Diseño moderno y responsive","Hasta 3 páginas o secciones sencillas","Presentación del negocio","Apartado de servicios","Formulario de contacto","Botón de WhatsApp","Configuración inicial de SEO básico","Publicación inicial de la web","Una ronda de modificaciones acordadas"]'::jsonb,
+ '["Diseño moderno y responsive","Hasta 3 páginas o secciones sencillas","Presentación del negocio","Apartado de servicios","Formulario de contacto","Botón de WhatsApp","SEO básico inicial","Configuración y publicación inicial","Una ronda de modificaciones acordadas"]'::jsonb,
  3, 1, null, false, 'Contratar Web Básica', 1),
 ('web-avanzada', 'Web Avanzada', 44999,
- 'Para empresas que quieren una web más completa y personalizada.',
+ 'Para empresas que necesitan una web más completa.',
  'Más páginas, diseño a medida y una experiencia cuidada en cada detalle.',
- '["Hasta 7 páginas","Diseño personalizado","Animaciones y transiciones elegantes","Formularios avanzados","Integración de WhatsApp","Galería de imágenes y presentación de servicios","SEO inicial","Optimización de velocidad","Diseño responsive","Publicación inicial","Dos rondas de modificaciones acordadas"]'::jsonb,
+ '["Hasta 7 páginas","Diseño personalizado","Animaciones elegantes","Formularios avanzados","Integración de WhatsApp","Galería de imágenes","Presentación de servicios","SEO inicial","Optimización de velocidad","Diseño responsive","Publicación inicial","Dos rondas de modificaciones acordadas"]'::jsonb,
  7, 2, 'Más elegido', true, 'Contratar Web Avanzada', 2),
 ('tienda-online', 'Tienda Online', 69999,
  'Para negocios que quieren vender productos por Internet.',
@@ -58,17 +58,17 @@ on conflict (slug) do nothing;
 
 insert into public.maintenance_plans (slug, name, price_cents, price_from, description, features, response_time, limits, sort)
 values
-('mantenimiento-basico', 'Mantenimiento Básico', 1999, false,
+('mantenimiento-basico', 'Básico', 1999, false,
  'Para que tu web siga funcionando sin preocuparte.',
  '["Revisión básica del funcionamiento (mensual)","Actualizaciones cuando correspondan a la tecnología utilizada","Copias de seguridad cuando la plataforma lo permita","Soporte básico por correo"]'::jsonb,
  'Respuesta en un máximo de 3 días laborables.',
  'Hasta 30 minutos de soporte al mes. No incluye cambios de diseño ni nuevas secciones.', 1),
-('mantenimiento-profesional', 'Mantenimiento Profesional', 3999, false,
+('mantenimiento-profesional', 'Profesional', 3999, false,
  'Soporte prioritario y pequeños cambios de contenido incluidos.',
  '["Todo lo incluido en el plan básico","Mayor prioridad de soporte","Pequeñas modificaciones de contenido (textos, imágenes, precios)","Revisión periódica del funcionamiento (quincenal)"]'::jsonb,
  'Respuesta en un máximo de 2 días laborables.',
  'Hasta 2 horas de trabajo al mes. Las horas no consumidas no se acumulan. Nuevas funciones se presupuestan aparte.', 2),
-('mantenimiento-tienda', 'Mantenimiento de Tienda Online', 5999, true,
+('mantenimiento-tienda', 'Tienda Online', 5999, true,
  'Para tiendas que necesitan revisar que se puede comprar sin problemas.',
  '["Revisión básica de la tienda","Comprobación de los procesos de compra","Revisión de errores habituales","Soporte y pequeñas modificaciones dentro del alcance acordado"]'::jsonb,
  'Respuesta en un máximo de 1 día laborable para incidencias que impidan comprar; 2 días laborables para el resto.',
@@ -93,7 +93,7 @@ select * from (values
   ('¿Podré modificar mi web?', 'Sí. Te explicamos cómo actualizar los contenidos habituales. Si prefieres que lo hagamos nosotros, puedes contratar un plan de mantenimiento.', 6),
   ('¿Cómo se realizan los pagos?', 'Online con tarjeta mediante Stripe, una pasarela de pago segura. Según el proyecto, se paga el importe completo o una señal inicial; antes de pagar verás el alcance, el precio final y cualquier coste recurrente.', 7),
   ('¿Quién será el propietario de la web?', 'Tú. Una vez abonado el importe total, el diseño final y los contenidos de tu web son tuyos. Los detalles se recogen en las condiciones de contratación.', 8),
-  ('¿Cómo funciona el proceso de contratación?', 'Eliges un plan, nos cuentas si necesitas algo especial, revisas el precio final y las condiciones, y confirmas. Si tus requisitos superan el plan, te enviamos un presupuesto revisado antes de cobrar.', 9),
+  ('¿Cómo funciona la contratación?', 'Eliges un plan, nos cuentas si necesitas algo especial, revisas el precio final y las condiciones, y confirmas. Si tus requisitos superan el plan, te enviamos un presupuesto revisado antes de cobrar.', 9),
   ('¿Cómo se agenda una llamada?', 'Pulsa «Agendar una llamada», elige un día y una hora disponibles y deja tus datos. Recibirás un correo de confirmación con enlaces para cambiar o cancelar la cita.', 10)
 ) as v(question, answer, sort)
 where not exists (select 1 from public.faqs);

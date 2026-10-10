@@ -6,7 +6,7 @@
 -- con la clave service_role, después de validar y aplicar antispam.
 -- =====================================================================
 
-create extension if not exists btree_gist;
+create extension if not exists btree_gist with schema extensions;
 
 -- ---------------------------------------------------------------------
 -- Utilidades

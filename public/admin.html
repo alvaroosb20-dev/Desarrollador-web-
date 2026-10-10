@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Panel de administración</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#131417">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+  <script src="config.js"></script>
+</head>
+<body class="admin">
+  <!-- Acceso -->
+  <main class="login" id="login" hidden>
+    <form class="form form-card login-card" id="login-form" novalidate>
+      <span class="logo" data-logo></span>
+      <h1>Panel de administración</h1>
+      <div class="field"><label for="l-email">Correo electrónico</label>
+        <input class="input" id="l-email" name="email" type="email" autocomplete="username" required></div>
+      <div class="field"><label for="l-password">Contraseña</label>
+        <input class="input" id="l-password" name="password" type="password" autocomplete="current-password" required></div>
+      <label class="check"><input type="checkbox" name="remember"><span>Mantener la sesión abierta en este dispositivo</span></label>
+      <p class="form-error" role="alert"></p>
+      <button class="btn btn-primary" type="submit">Entrar</button>
+      <a class="muted small" href="index.html">Volver a la web</a>
+    </form>
+  </main>
+
+  <!-- Panel -->
+  <div class="shell" id="shell" hidden>
+    <aside class="side">
+      <a class="logo" href="index.html" data-logo target="_blank" rel="noopener"></a>
+      <nav class="side-nav" aria-label="Secciones del panel">
+        <a href="#/">Resumen</a>
+        <a href="#/solicitudes">Solicitudes</a>
+        <a href="#/llamadas">Llamadas</a>
+        <a href="#/disponibilidad">Disponibilidad</a>
+        <a href="#/contrataciones">Contrataciones</a>
+        <a href="#/paquetes">Paquetes y precios</a>
+        <a href="#/contenido">Contenido</a>
+        <a href="#/ajustes">Ajustes</a>
+        <a href="#/integraciones">Integraciones</a>
+      </nav>
+      <div class="side-foot">
+        <span class="muted small" data-user></span>
+        <button class="btn btn-ghost btn-sm" type="button" data-logout>Cerrar sesión</button>
+      </div>
+    </aside>
+    <main class="content" id="view" tabindex="-1"></main>
+  </div>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

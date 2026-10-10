@@ -1,0 +1,22 @@
+# Configuración de Supabase CLI para las Edge Functions.
+# verify_jwt = false: estas funciones son públicas (formularios, reservas, pagos)
+# o comprueban la sesión por su cuenta (admin). El webhook de Stripe no envía JWT.
+project_id = "webs-que-venden"
+
+[functions.forms]
+verify_jwt = false
+
+[functions.booking]
+verify_jwt = false
+
+[functions.checkout]
+verify_jwt = false
+
+[functions.stripe-webhook]
+verify_jwt = false
+
+[functions.admin]
+verify_jwt = false
+
+[functions.calendar-feed]
+verify_jwt = false
