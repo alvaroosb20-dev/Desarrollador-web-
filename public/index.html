@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Diseño de páginas web para negocios | WEBS QUE VENDEN</title>
+  <meta name="description" content="Diseñamos páginas web modernas para que tu negocio destaque, consiga clientes y venda por Internet. Planes con precio cerrado, tiendas online y reservas de llamada.">
+  <meta name="theme-color" content="#131417">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Diseño de páginas web para negocios">
+  <meta property="og:description" content="Webs modernas, tiendas online y landing pages con precio cerrado.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script src="assets/js/gate.js"></script>
+  <style>
+    .gate body { overflow: hidden; }
+    .gate .wizard { display: block; }
+    .gate #site > * { visibility: hidden; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <div id="site">
+    <header class="site-header" data-site-header></header>
+
+    <main id="main">
+      <!-- Portada -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="wrap hero-grid">
+          <div>
+            <h1 id="hero-title" data-hero-title>Tu próxima web puede ser el comienzo de algo grande</h1>
+            <p class="lead" data-hero-subtitle>Diseñamos páginas web modernas para que tu negocio destaque, consiga clientes y venda por Internet.</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" type="button" data-open-wizard>Crear mi página web</button>
+              <a class="btn btn-ghost" href="#planes">Ver nuestros planes</a>
+              <a class="btn btn-call" href="reservas.html" data-call></a>
+            </div>
+            <p class="hero-note" data-hero-note></p>
+          </div>
+          <div class="showcase" aria-label="Diseños de demostración">
+            <div class="showcase-frame">
+              <div class="showcase-bar"><span class="dots"><i></i><i></i><i></i></span><span class="showcase-url">www.<b data-showcase-url>tunegocio</b>.es</span></div>
+              <div class="showcase-stage" data-showcase></div>
+            </div>
+            <div class="showcase-caption"><span data-caption></span><span class="showcase-pager" data-pager></span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Servicios -->
+      <section class="section" id="servicios" aria-labelledby="servicios-title">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="servicios-title">Qué hacemos</h2>
+            <p class="lead">Webs pensadas para un objetivo concreto: que te contacten, que reserven o que compren.</p>
+          </div>
+          <div class="services" data-services></div>
+        </div>
+      </section>
+
+      <!-- Cómo trabajamos -->
+      <section class="section" id="proceso" aria-labelledby="proceso-title">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="proceso-title">Cómo trabajamos</h2>
+            <p class="lead">Un proceso corto y claro. Siempre sabes en qué punto está tu web.</p>
+          </div>
+          <ol class="steps" data-steps></ol>
+        </div>
+      </section>
+
+      <!-- Planes -->
+      <section class="section" id="planes" aria-labelledby="planes-title">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="planes-title">Planes con precio cerrado</h2>
+            <p class="lead">Elige el punto de partida. Antes de pagar verás el alcance exacto, el precio final y las condiciones.</p>
+          </div>
+          <div class="plans" data-plans></div>
+          <div class="plans-after">
+            <div class="not-included">
+              <p data-pricing-note></p>
+              <p><strong>No incluido salvo acuerdo expreso:</strong> dominio, hosting, licencias, suscripciones a servicios externos, comisiones de pago, carga masiva de productos, funcionalidades personalizadas adicionales y mantenimiento mensual. Sin costes ocultos: todo lo que se pague aparece en el presupuesto.</p>
+            </div>
+            <a class="btn btn-call" href="reservas.html" data-call></a>
+          </div>
+
+          <div class="maint" id="mantenimiento">
+            <div class="maint-head">
+              <div>
+                <h3>Mantenimiento mensual opcional</h3>
+                <p>Cada plan indica qué tareas incluye y sus límites. No ofrecemos mantenimiento ilimitado.</p>
+              </div>
+            </div>
+            <div data-maintenance></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portafolio -->
+      <section class="section" id="portafolio" aria-labelledby="portafolio-title">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="portafolio-title">Diseños para cada sector</h2>
+            <p class="lead">Ejemplos de cómo podría verse la web de tu negocio.</p>
+          </div>
+          <div class="demos" data-demos></div>
+          <p class="demo-note">Todos los proyectos de esta galería son diseños de demostración creados por nosotros. No representan clientes reales.</p>
+        </div>
+      </section>
+
+      <!-- Preguntas frecuentes -->
+      <section class="section" id="preguntas" aria-labelledby="preguntas-title">
+        <div class="wrap faq">
+          <div class="section-head">
+            <h2 id="preguntas-title">Preguntas frecuentes</h2>
+            <p class="lead">Si tu duda no está aquí, pregúntanos en una llamada de 15 minutos.</p>
+            <p><a class="btn btn-call" href="reservas.html" data-call></a></p>
+          </div>
+          <div class="faq-list" data-faqs></div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section class="section" id="contacto" aria-labelledby="contacto-title">
+        <div class="wrap contact">
+          <div>
+            <h2 id="contacto-title">Hablemos de tu proyecto</h2>
+            <p class="lead" style="margin-top:14px">Cuéntanos qué necesitas y te respondemos con una propuesta clara.</p>
+            <div class="contact-ways" data-contact-ways></div>
+            <a class="btn btn-call" href="reservas.html" data-call></a>
+          </div>
+          <form class="form form-card" id="contact-form" novalidate>
+            <div class="row-2">
+              <div class="field">
+                <label for="c-name">Nombre<span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="c-name" name="name" autocomplete="name" required maxlength="80">
+                <p class="err" id="c-name-err" data-error-for="name"></p>
+              </div>
+              <div class="field">
+                <label for="c-email">Correo electrónico<span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="c-email" name="email" type="email" autocomplete="email" required maxlength="254">
+                <p class="err" id="c-email-err" data-error-for="email"></p>
+              </div>
+            </div>
+            <div class="row-2">
+              <div class="field">
+                <label for="c-phone">Teléfono o WhatsApp<span class="opt">(opcional)</span></label>
+                <input class="input" id="c-phone" name="phone" type="tel" autocomplete="tel" maxlength="30">
+                <p class="err" id="c-phone-err" data-error-for="phone"></p>
+              </div>
+              <div class="field">
+                <label for="c-topic">Sobre qué</label>
+                <select class="input" id="c-topic" name="topic" data-topics>
+                  <option value="">Consulta general</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="c-message">Mensaje<span class="req" aria-hidden="true">*</span></label>
+              <textarea class="input" id="c-message" name="message" required maxlength="3000" placeholder="Qué tipo de web necesitas, para qué negocio y cualquier detalle útil."></textarea>
+              <p class="err" id="c-message-err" data-error-for="message"></p>
+            </div>
+            <div class="hp" aria-hidden="true"><label>No rellenar <input name="website" tabindex="-1" autocomplete="off"></label></div>
+            <label class="check"><input type="checkbox" name="privacy" required><span>He leído y acepto la <a href="politica-privacidad.html" target="_blank" rel="noopener">política de privacidad</a>.<span class="req" aria-hidden="true">*</span></span></label>
+            <p class="err" id="c-privacy-err" data-error-for="privacy"></p>
+            <p class="form-error" role="alert"></p>
+            <div><button class="btn btn-primary" type="submit">Enviar mensaje</button></div>
+            <p class="muted small">Los campos con <span class="req">*</span> son obligatorios.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-site-footer></footer>
+  </div>
+
+  <!-- Formulario inicial paso a paso -->
+  <div class="wizard" id="wizard" role="dialog" aria-modal="true" aria-labelledby="wizard-title">
+    <div class="wizard-top">
+      <div class="wrap wizard-top-in">
+        <span class="logo" data-logo></span>
+        <span class="wizard-count" data-wizard-count aria-live="polite"></span>
+        <button class="wizard-close" type="button" data-wizard-close hidden aria-label="Cerrar el formulario"></button>
+      </div>
+      <div class="progress" role="progressbar" aria-label="Progreso del formulario" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+    </div>
+    <div class="wrap wizard-main">
+      <form class="wizard-step" data-wizard-step novalidate></form>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Agendar una llamada | WEBS QUE VENDEN</title>
+  <meta name="description" content="Reserva una llamada gratuita de 15 minutos para hablar de tu página web. Elige el día y la hora que mejor te vengan.">
+  <meta name="theme-color" content="#131417">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="site-header" data-site-header></header>
+  <main id="main">
+    <div class="wrap page-head">
+      <a class="back-link" href="index.html"><svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M14.5 6l-6 6 6 6"/></svg>Volver a la web</a>
+      <h1>Agendar una llamada</h1>
+      <p class="lead">Una llamada de <span data-duration>15</span> minutos, sin compromiso, para entender tu proyecto y recomendarte la mejor opción.</p>
+    </div>
+    <div class="wrap page-body" data-booking-root>
+      <div class="skeleton" style="height:420px" aria-hidden="true"></div>
+      <p class="sr-only" role="status">Cargando los horarios disponibles…</p>
+    </div>
+  </main>
+  <footer class="site-footer" data-site-footer></footer>
+  <script type="module" src="reservas.js"></script>
+</body>
+</html>
