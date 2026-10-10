@@ -10,6 +10,7 @@ do $$ begin
 end $$;
 grant anon, authenticated, service_role to authenticator;
 
+create schema if not exists extensions;
 create schema if not exists auth;
 create table if not exists auth.users (id uuid primary key default gen_random_uuid(), email text unique);
 create or replace function auth.uid() returns uuid language sql stable as $$
